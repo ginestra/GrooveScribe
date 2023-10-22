@@ -93,9 +93,10 @@ var constant_OUR_MIDI_SNARE_FLAM = 107;
 var constant_OUR_MIDI_SNARE_DRAG = 103;
 var constant_OUR_MIDI_KICK_NORMAL = 35;
 var constant_OUR_MIDI_TOM1_NORMAL = 48;
-var constant_OUR_MIDI_TOM2_NORMAL = 47;
+var constant_OUR_MIDI_TOM2_NORMAL = 43; // 47
 var constant_OUR_MIDI_TOM3_NORMAL = 45;
 var constant_OUR_MIDI_TOM4_NORMAL = 43;
+// 41, 45 and 47 not working
 
 // make these global so that they are shared among all the GrooveUtils classes invoked
 var global_current_midi_start_time = 0;
@@ -1233,7 +1234,7 @@ function GrooveUtils() {
 			'V:Hands stem=up \n' +
 			'%%voicemap drum\n' +
 			'"^Hi-Hat"^g4 "^Open"!open!^g4 ' +
-			'"^Crash"^c\'4 "^Stacker"^d\'4 "^Ride"^A\'4 "^Ride Bell"^B\'4 x2 "^Tom"e4 "^Tom"A4 "^Snare"c4 "^Buzz"!///!c4 "^Cross"^c4 "^Ghost  "!(.!!).!c4 "^Flam"{/c}c4  x10 ||\n' +
+			'"^Crash"^c\'4 "^Stacker"^d\'4 "^Ride"^A\'4 "^Ride Bell"^B\'4 x2 "^High Tom"e4 "^Mid Tom"d4 "^Floor Tom"A4 "^Snare"c4 "^Buzz"!///!c4 "^Cross"^c4 "^Ghost  "!(.!!).!c4 "^Flam"{/c}c4  x10 ||\n' +
 			'V:Feet stem=down \n' +
 			'%%voicemap drum\n' +
 			'x52 "^Kick"F4 "^HH foot"^d,4 x4 ||\n' +
