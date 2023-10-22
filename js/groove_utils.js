@@ -436,17 +436,14 @@ function GrooveUtils() {
 	};
 
 	root.GetDefaultTom1Groove = function (notes_per_measure, timeSigTop, timeSigBottom, numMeasures) {
-
 		return root.GetEmptyGroove(notes_per_measure, numMeasures);
 	};
 
 	root.GetDefaultTom2Groove = function (notes_per_measure, timeSigTop, timeSigBottom, numMeasures) {
-
 		return root.GetEmptyGroove(notes_per_measure, numMeasures);
 	};
 
 	root.GetDefaultTom4Groove = function (notes_per_measure, timeSigTop, timeSigBottom, numMeasures) {
-
 		return root.GetEmptyGroove(notes_per_measure, numMeasures);
 	};
 
