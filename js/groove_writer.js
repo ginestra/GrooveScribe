@@ -3788,6 +3788,9 @@ function GrooveWriter() {
 			case constant_ABC_T1_Normal:
 				setFunction(displayIndex, "normal", false);
 				break;
+			case constant_ABC_T2_Normal:
+				setFunction(displayIndex, "normal", false);
+				break;
 			case constant_ABC_T4_Normal:
 				setFunction(displayIndex, "normal", false);
 				break;
