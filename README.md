@@ -1,4 +1,4 @@
-# README #
+# README
 
 This repo is a fork of [Lou Montulli's GrooveScribe](https://github.com/montulli/GrooveScribe).
 
@@ -9,48 +9,37 @@ Please be kind and considerate when offering feedback, everyone involved is dona
 
 The app is running @ https://ginestra.github.io/GrooveScribe/
 
-### How to run the app locally
+## How to run the app locally
 
-This app is plain HTML + JS + CSS and it's deployed using Github Pages
+This app is plain HTML + JS + CSS and it's deployed on [Github Pages](https://pages.github.com/) and uses [Jekyll](https://jekyllrb.com/).
+You can fork or clone the repository and run it locally. Follow these [instructions](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) on how to.
 
-Readme for Groove Scribe
+**Beginner Tip:** I use the flag `--watch` so that I that I don't have to build at every change.
 
-### What is this repository for? ###
+## What is my plan for this app?
 
-* Groove Scribe is an HTML application for drummers.    Groove Scribe is a point and click authoring system to create drum sheet music as well as a practice tool for learning and practicing grooves and exercises.
+I'd like to contribute to make it easier to maintain and scale.
 
-### How do I use it ###
+In particular I will make an attempt at:
+* Refactoring CSS - This is my domain
+* Refactor JS - This is less my domain
+* Adding some docs
 
-* Hosted here: http://www.mikeslessons.com/gscribe/
-* Also here: http://montulli.github.io/GrooveScribe/
+Also:
 
-### How do I get set up? ###
+* In collaboration with my drum teacher, I will try to add new features, extend existing ones, and possibly tidy up others
 
-* Summary of set up:  Just host all the files on a web server.   The application runs entirely in the browser with Javascript, HTML & CSS.
+* Ideally, I would like to make the code a bit more modular
 
-* Configuration: None
+Overall GrooveScribe is a sweet app, I started using it as a student and loved it, so I want more people to have access to it.
 
-* Dependencies
-    * Google's Leto font
-    * Google's url shortening api
+It will remain available for others to implement their changes and I will be open to pull requests to improve this version of it.
 
-* Deployment instructions
-Deploy the files to an HTTP server.
+### Licence
+The app will remain under GNU Licence as published by its original authours.
 
-### Contribution guidelines ###
+## Thanks
+Thanks to [Lou Montulli](http://montulli.github.io/GrooveScribe/) and [Mike Johnston](http://www.mikeslessons.com/gscribe/) for creating this wonderful tool and sharing it with the rest of the world.
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* File issues in github please:   https://github.com/montulli/GrooveScribe/issues
-* lou at montulli dot org is the admin and author.   He cannot answer every email, so please use good judgement before emailing.
-
-To edit this Readme:
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### See also ###
-
-* [SOURCE_CODE_README.md](SOURCE_CODE_README.md)
+## Final note
+I'll edit this README as I implement this app more.
