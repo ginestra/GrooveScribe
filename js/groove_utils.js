@@ -93,7 +93,7 @@ var constant_OUR_MIDI_SNARE_FLAM = 107;
 var constant_OUR_MIDI_SNARE_DRAG = 103;
 var constant_OUR_MIDI_KICK_NORMAL = 35;
 var constant_OUR_MIDI_TOM1_NORMAL = 48;
-var constant_OUR_MIDI_TOM2_NORMAL = 43; // 47
+var constant_OUR_MIDI_TOM2_NORMAL = 47; // 47
 var constant_OUR_MIDI_TOM3_NORMAL = 45;
 var constant_OUR_MIDI_TOM4_NORMAL = 43;
 // 41, 45 and 47 not working
