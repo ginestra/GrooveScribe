@@ -1,5 +1,18 @@
 # README #
 
+This repo is a fork of [Lou Montulli's GrooveScribe](https://github.com/montulli/GrooveScribe).
+
+My current plan is to rationalise and refactor the code so that it becomes easier to add/edit features.
+
+It's a side project, non-commercial. Collaborators are welcome.
+Please be kind and considerate when offering feedback, everyone involved is donating their time to this. :)
+
+The app is running @ https://ginestra.github.io/GrooveScribe/
+
+### How to run the app locally
+
+This app is plain HTML + JS + CSS and it's deployed using Github Pages
+
 Readme for Groove Scribe
 
 ### What is this repository for? ###
