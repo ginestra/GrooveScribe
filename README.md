@@ -43,3 +43,9 @@ Thanks to [Lou Montulli](http://montulli.github.io/GrooveScribe/) and [Mike John
 
 ## Final note
 I'll edit this README as I implement this app more.
+
+## Release Notes (ish)
+
+- Added Tom 2
+- Minimal CSS refactor
+- Added the option to add a 1/4 signature (single bar)
