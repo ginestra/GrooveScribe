@@ -1410,3 +1410,17 @@ input[type=checkbox]:not(:checked) + label {
 		width: 100% !important;
 	}
 }
+
+
+/* Link to Github repo */
+.credits {
+	padding: .5rem 1rem;
+}
+.credits a {
+	color: #e8e8e8;
+	text-decoration: none;
+}
+
+.credits a:hover {
+	text-decoration: underline;
+}

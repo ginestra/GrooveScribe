@@ -12,9 +12,8 @@
 	--highlight-color-on-white: #2484C0;
 }
 
-
 	/* this is for debugging layout issues - puts a read border around everything */
-	/* body * { border: 1px solid red; }		 */
+	/* body * { border: 1px solid red; } */
 	body {
 
 	}
@@ -59,8 +58,6 @@
 		padding-left: 0px;
 	}
 	.playerControlsRow {
-		/display: flex;
-		/display: -webkit-flex;
 		padding-left: 6px;
 		height: 48px;
 		flex-flow: flex-start;
@@ -143,7 +140,6 @@
 			display: none;
 	}
 	.tempoRow, .swingRow {
-		/border: 1px solid red;
 		display: flex;
 		display: -webkit-flex;
 		height: 24px;
