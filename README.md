@@ -51,6 +51,7 @@ I'll edit this README as I implement this app more.
 - Added the option to add a 1/4 signature (single bar)
 - Added link to Github repo in the footer
 - Added option for 32/4
+- Removed default groove
 
 ## Other forks
 TODO

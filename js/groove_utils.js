@@ -420,18 +420,19 @@ function GrooveUtils() {
     // "|x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-|";
 	root.GetDefaultHHGroove = function (notes_per_measure, timeSigTop, timeSigBottom, numMeasures) {
 		var retString = "";
-		var oneMeasureString = "|";
-		var i;
+		// // Remove default by commenting this
+		// var oneMeasureString = "|";
+		// var i;
 
-		for(i = 0; i < notes_per_measure; i++) {
-			if(notes_per_measure == 48)
-				oneMeasureString += "-";
-			else
-				oneMeasureString += "x";
-		}
-		for (i = 0; i < numMeasures; i++)
-			retString += oneMeasureString;
-		retString += "|";
+		// for(i = 0; i < notes_per_measure; i++) {
+		// 	if(notes_per_measure == 48)
+		// 		oneMeasureString += "-";
+		// 	else
+		// 		oneMeasureString += "x";
+		// }
+		// for (i = 0; i < numMeasures; i++)
+		// 	retString += oneMeasureString;
+		// retString += "|";
 
 		return retString;
 	};
@@ -452,21 +453,22 @@ function GrooveUtils() {
     // |--------O---------------O-------|
 	root.GetDefaultSnareGroove = function (notes_per_measure, timeSigTop, timeSigBottom, numMeasures) {
 		var retString = "";
-		var oneMeasureString = "|";
-		var i;
-		var notes_per_grouping = (notes_per_measure / timeSigTop);
+		// // Remove default by commenting this
+		// var oneMeasureString = "|";
+		// var i;
+		// var notes_per_grouping = (notes_per_measure / timeSigTop);
 
-		for(i = 0; i < notes_per_measure; i++) {
-			// if the note falls on the beginning of a group
-			// and the group is odd
-			if(i % notes_per_grouping === 0 && (i / notes_per_grouping) % 2 !== 0)
-				oneMeasureString += "O";
-			else
-				oneMeasureString += "-";
-		}
-		for (i = 0; i < numMeasures; i++)
-				retString += oneMeasureString;
-			retString += "|";
+		// for(i = 0; i < notes_per_measure; i++) {
+		// 	// if the note falls on the beginning of a group
+		// 	// and the group is odd
+		// 	if(i % notes_per_grouping === 0 && (i / notes_per_grouping) % 2 !== 0)
+		// 		oneMeasureString += "O";
+		// 	else
+		// 		oneMeasureString += "-";
+		// }
+		// for (i = 0; i < numMeasures; i++)
+		// 		retString += oneMeasureString;
+		// 	retString += "|";
 
 		return retString;
 
@@ -476,21 +478,22 @@ function GrooveUtils() {
     // |o---------------o---------------|
 	root.GetDefaultKickGroove = function (notes_per_measure, timeSigTop, timeSigBottom, numMeasures) {
 		var retString = "";
-		var oneMeasureString = "|";
-		var i;
-		var notes_per_grouping = (notes_per_measure / timeSigTop);
+		// // Remove default by commenting this
+		// var oneMeasureString = "|";
+		// var i;
+		// var notes_per_grouping = (notes_per_measure / timeSigTop);
 
-		for(i = 0; i < notes_per_measure; i++) {
-			// if the note falls on the beginning of a group
-			// and the group is even
-			if(i % notes_per_grouping === 0 && (i / notes_per_grouping) % 2 === 0)
-				oneMeasureString += "o";
-			else
-				oneMeasureString += "-";
-		}
-		for (i = 0; i < numMeasures; i++)
-				retString += oneMeasureString;
-			retString += "|";
+		// for(i = 0; i < notes_per_measure; i++) {
+		// 	// if the note falls on the beginning of a group
+		// 	// and the group is even
+		// 	if(i % notes_per_grouping === 0 && (i / notes_per_grouping) % 2 === 0)
+		// 		oneMeasureString += "o";
+		// 	else
+		// 		oneMeasureString += "-";
+		// }
+		// for (i = 0; i < numMeasures; i++)
+		// 		retString += oneMeasureString;
+		// 	retString += "|";
 
 		return retString;
 	};
