@@ -925,7 +925,7 @@ function GrooveUtils() {
 		if(timeSigTop < 1 || timeSigTop > 32)
 			timeSigTop = 4;
 
-		// only valid if 2,4,8, or 16
+		// only valid if 2, 4, 8, or 16
 		if(timeSigBottom != 2 && timeSigBottom != 4 && timeSigBottom != 8 && timeSigBottom != 16)
 			timeSigBottom = 4;
 
