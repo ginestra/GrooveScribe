@@ -404,6 +404,10 @@ body {
 	z-index: 4;
 }
 
+.stickings-row-container {
+	margin-left: 15px !important;
+}
+
 .stickings-container {
 	display: none;
 	height: 32px;

@@ -57,7 +57,7 @@ if (typeof(GrooveDisplay) === "undefined") {
 		root.checkloadjscssfile = function (filename, filetype) {
 			if (root.filesadded.indexOf("[" + filename + "]") == -1) {
 				root.loadjscssfile(filename, filetype);
-				root.filesadded += "[" + filename + "]"; //List of files added in the form "[filename1],[filename2],etc"
+				root.filesadded += "[" + filename + "]"; // List of files added in the form "[filename1],[filename2],etc"
 			} else {
 				console.log("file already added!" + filename);
 			}
@@ -240,13 +240,13 @@ if (typeof(GrooveDisplay) === "undefined") {
 			layoutFunction();
 
 			// resize SVG on window resize (not needed now.   We render to 1000 and scale in css)
-			//window.addEventListener("resize", layoutFunction);
-			//window.addEventListener("beforeprint", layoutFunction);
+			// window.addEventListener("resize", layoutFunction);
+			// window.addEventListener("beforeprint", layoutFunction);
 
 
 			if (showPlayer) {
 				myGrooveUtils.setGrooveData(GrooveData);
-				//console.log(GrooveData);
+				// console.log(GrooveData);
 
 				myGrooveUtils.AddMidiPlayerToPage(midiPlayerTargetId, GrooveData.notesPerMeasure, true);
 				myGrooveUtils.expandOrRetractMIDI_playback(true, expandPlayer); // make it small
