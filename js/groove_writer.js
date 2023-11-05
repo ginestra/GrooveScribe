@@ -1565,7 +1565,7 @@ function GrooveWriter() {
 					set_hh_state(id, is_hh_on(id) ? "off" : "normal", true);
 					break;
 				case "snare":
-					set_snare_state(id, is_snare_on(id) ? "off" : "accent", true);
+					set_snare_state(id, is_snare_on(id) ? "off" : "normal", true);
 					break;
 				case "tom1":
 					set_tom_state(id, 1, is_tom_on(id, 1) ? "off" : "normal", true);
