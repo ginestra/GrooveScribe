@@ -428,6 +428,10 @@ body {
 	border: 1px solid transparent;
 }
 
+.row-composer {
+	border-bottom: 1px solid #bababa !important;
+}
+
 .hi-hat-container {
 	height: 42px;
 	white-space: nowrap;

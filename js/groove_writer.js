@@ -4370,13 +4370,7 @@ function GrooveWriter() {
 									<div class="kick-label" onClick="myGrooveWriter.noteLabelClick(event, \'kick\', ' + baseindex + ')" oncontextmenu="event.preventDefault(); myGrooveWriter.noteLabelClick(event, \'kick\', ' + baseindex + ')">Kick</div>\
 								</div>\
 								<div class="music-line-container">\
-									\
-									<div class="notes-container">\
-									<div class="staff-line-1"></div>\
-									<div class="staff-line-2"></div>\
-									<div class="staff-line-3"></div>\
-									<div class="staff-line-4"></div>\
-									<div class="staff-line-5"></div>\n');
+									<div class="notes-container">');
 
 		// backgrounds for highlighting.  Evenly spaced cols of space
 		newHTML += ('\
@@ -4394,7 +4388,7 @@ function GrooveWriter() {
 
 		// Hi-hats
 		newHTML += ('\
-										<div class="hi-hat-container">\
+										<div class="hi-hat-container row-composer">\
 											<div class="opening_note_space"> </div>');
 		for (i = indexStartForNotes; i < class_notes_per_measure + indexStartForNotes; i++) {
 
@@ -4423,7 +4417,7 @@ function GrooveWriter() {
 
 		// Toms 1
 		newHTML += ('\
-										<div class="toms-container" id="tom1-container">\
+										<div class="toms-container row-composer" id="tom1-container">\
 											<div class="opening_note_space"> </div>');
 		for (i = indexStartForNotes; i < class_notes_per_measure + indexStartForNotes; i++) {
 			newHTML += ('\
@@ -4441,7 +4435,7 @@ function GrooveWriter() {
 
 		// Toms 2
 		newHTML += ('\
-										<div class="toms-container" id="tom2-container">\
+										<div class="toms-container row-composer" id="tom2-container">\
 											<div class="opening_note_space"> </div>');
 		for (i = indexStartForNotes; i < class_notes_per_measure + indexStartForNotes; i++) {
 			newHTML += ('\
@@ -4459,7 +4453,7 @@ function GrooveWriter() {
 
 		// Snare stuff
 		newHTML += ('\
-										<div class="snare-container">\
+										<div class="snare-container row-composer">\
 											<div class="opening_note_space"> </div> ');
 		for (i = indexStartForNotes; i < class_notes_per_measure + indexStartForNotes; i++) {
 			newHTML += ('' +
@@ -4525,7 +4519,7 @@ function GrooveWriter() {
 
 		// Toms 4
 		newHTML += ('\
-										<div class="toms-container" id="tom4-container">\
+										<div class="toms-container row-composer" id="tom4-container">\
 											<div class="opening_note_space"> </div>');
 		for (i = indexStartForNotes; i < class_notes_per_measure + indexStartForNotes; i++) {
 			newHTML += ('\
@@ -4544,7 +4538,7 @@ function GrooveWriter() {
 
 		// Kick stuff
 		newHTML += ('\
-										<div class="kick-container">\
+										<div class="kick-container row-composer">\
 											<div class="opening_note_space"> </div> ');
 		for (var j = indexStartForNotes; j < class_notes_per_measure + indexStartForNotes; j++) {
 			newHTML += ('\
