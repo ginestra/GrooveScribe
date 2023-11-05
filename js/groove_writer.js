@@ -1551,6 +1551,7 @@ function GrooveWriter() {
 		return false;
 	};
 
+	// left click == default note
 	root.noteLeftClick = function (event, type, id) {
 
 		// use a popup if advanced edit is on
