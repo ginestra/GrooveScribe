@@ -3068,6 +3068,7 @@ function GrooveWriter() {
 		// get the encoded notes out of the UI.
 		// run through all the measure, but don't include the one that we are deleting
 		var topIndex = class_notes_per_measure * class_number_of_measures;
+		console.log(class_number_of_measures);
 		for (var i = 0; i < topIndex; i++) {
 
 			// skip the range we are deleting
@@ -3089,6 +3090,47 @@ function GrooveWriter() {
 		changeDivisionWithNotes(class_time_division, uiStickings, uiHH, uiTom1, uiTom2, uiTom4, uiSnare, uiKick);
 
 		updateSheetMusic();
+		console.log(class_number_of_measures);
+	};
+
+	// remove ALL measures from the page
+	// measureNum is indexed starting at 1, not 0
+	root.closeAllMeasuresButtonClick = function (measureNum) {
+
+		for (let x = class_number_of_measures; x > 1; x--) {
+			var uiStickings = "";
+			var uiHH = "";
+			var uiTom1 = "";
+			var uiTom2 = "";
+			var uiTom4 = "";
+			var uiSnare = "";
+			var uiKick = "";
+
+			// get the encoded notes out of the UI.
+			// run through all the measure, but don't include the one that we are deleting
+			var topIndex = class_notes_per_measure * class_number_of_measures;
+				for (var i = 0; i < topIndex; i++) {
+
+					// skip the range we are deleting
+					if (i < (measureNum - 1) * class_notes_per_measure || i >= measureNum * class_notes_per_measure) {
+						uiStickings += get_sticking_state(i, "URL");
+						uiHH += get_hh_state(i, "URL");
+						uiTom1 += get_tom_state(i, 1, "URL");
+						uiTom2 += get_tom_state(i, 2, "URL");
+						uiTom4 += get_tom_state(i, 4, "URL");
+						uiSnare += get_snare_state(i, "URL");
+						uiKick += get_kick_state(i, "URL");
+					}
+				}
+
+			class_number_of_measures--;
+
+			root.expandAuthoringViewWhenNecessary(class_notes_per_measure, class_number_of_measures);
+
+			changeDivisionWithNotes(class_time_division, uiStickings, uiHH, uiTom1, uiTom2, uiTom4, uiSnare, uiKick);
+
+			updateSheetMusic();
+		}
 	};
 
 	// add a measure to the page
