@@ -33,7 +33,7 @@ if (document.currentScript)
 var global_midiInitialized = false;
 
 // global constants
-var constant_MAX_MEASURES = 10;
+var constant_MAX_MEASURES = 50;
 var constant_DEFAULT_TEMPO = 80;
 var constant_ABC_STICK_R = '"R"x';
 var constant_ABC_STICK_L = '"L"x';
@@ -1041,7 +1041,7 @@ function GrooveUtils() {
 		var fullURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
 
 		if(!url_destination) {
-			// then assume it is the groove writer display.  Do nothing
+			// then assume it is the groove writer display. Do nothing
 		} else if(url_destination == "display") {
 			// asking for the "groove_display" page
 			if(fullURL.includes('index.html'))
@@ -1052,7 +1052,7 @@ function GrooveUtils() {
 				fullURL += 'GrooveEmbed.html';
 		} else if(url_destination == "fullGrooveScribe") {
 			// asking for the full GrooveScribe link
-			fullURL = 'https://www.mikeslessons.com/gscribe';
+			fullURL = 'https://ginestra.github.io/GrooveScribe/';
 		}
 
 		fullURL += '?';
